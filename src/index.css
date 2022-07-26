@@ -5,9 +5,71 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #EC4C8A;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+  list-style-type: none;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
+.black {
+  color: black;
+}
+
+.full-height {
+  height: 100%;
+  border: none;
+  box-shadow: none !important;
+}
+
+.full-width {
+  width: 80%;
+  padding-top: 20px;
+}
+
+.global-container {
+  background: #EF70A0;
+}
+
+#headline {
+  padding-top: 20px;
+  
+}
+
+.continent__card {
+  display: flex;
+  align-items: center;
+}
+
+.continent_inner__card {
+  border: none !important;
+  border-radius: 0%;
+  box-shadow: none !important;
+}
+
+h6 {
+  color: white;
+  margin: 0;
+}
+
+h2 {
+  color: white;
+}
+
+hr {
+  margin: 0;
+  height: 1px;
+  background: black;
+}
+
+.border {
+  border-right: 1px solid black;
+  padding-right: 10px;
+}
+
