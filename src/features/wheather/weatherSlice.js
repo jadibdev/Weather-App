@@ -51,6 +51,7 @@ const weatherSlice = createSlice({
       const localState = state;
       localState.status = 'success';
       localState.weather.push(action.payload);
+      console.log('from reducer', action.payload)
     },
     [getWeather.rejected]: (state) => {
       const localState = state;
