@@ -11,7 +11,8 @@ let coor = [
   {lat: -1.286389, lon: 36.817223}, 
   {lat: 52.520008, lon: 13.404954},
   {lat: -33.865143, lon: 151.209900},
-  {lat: 31.224361, lon: 121.469170}
+  {lat: 31.224361, lon: 121.469170},
+  {lat: 40.730610, lon: -73.935242},
 ]
 
 export const getWeather = createAsyncThunk(

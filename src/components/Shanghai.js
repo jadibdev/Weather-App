@@ -28,13 +28,13 @@ const SanFrancisco = () => {
   return (
     <div className="nav-container" >
       <ul className="nav-list" style={{padding: '20px'}}>
-        <li><NavLink to="/"><ArrowBackIosIcon style={{color: 'white'}}  /></NavLink></li>
+        <li><NavLink to="/"><ArrowBackIosIcon style={{color: 'white'}}/></NavLink></li>
         <li><LocationOnIcon className="white"/></li>
         {/* <li><NavLink className={({ isActive }) => (isActive ? 'active' : 'inactive')} to="/">Location stats</NavLink></li> */}
         <li className="white"><SettingsIcon /></li>
       </ul>
       <hr />
-      <h2 style={{marginLeft: '10px'}}>San Francisco weather stats</h2>
+      <h2 style={{marginLeft: '10px'}}>Shanghai weather stats</h2>
       <Box sx={{ width: '100%' }} className="global-container" style={{background: '#EF70A0'}}>
         <Grid className="continent__card" container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
           <Grid item xs={6} className="full-height">
@@ -44,7 +44,7 @@ const SanFrancisco = () => {
         </Grid>
         <Grid item xs={6} className="full-height">
           <Item className="full-height" style={{display: 'flex', alignItems: 'center', gap: '10px', justifyContent: 'flex-end'}}>
-            <h2>{Math.floor((weather[0][0].main.temp - 273.15) * 9/5 + 32)} °F</h2>
+            <h2>{Math.floor((weather[0][4].main.temp - 273.15) * 9/5 + 32)} °F</h2>
             <ArrowForwardIcon style={{color: 'white'}}/>
           </Item>
         </Grid>
@@ -58,7 +58,7 @@ const SanFrancisco = () => {
         </Grid>
         <Grid item xs={6} className="full-height" style={{background: '#EC4C8A'}}>
           <Item className="full-height" style={{display: 'flex', alignItems: 'center', gap: '10px', justifyContent: 'flex-end', background: '#EC4C8A'}}>
-            <h2>{weather[0][0].wind.speed}</h2>
+            <h2>{weather[0][4].wind.speed}</h2>
             <ArrowForwardIcon style={{color: 'white'}}/>
           </Item>
         </Grid>
@@ -72,7 +72,7 @@ const SanFrancisco = () => {
         </Grid>
         <Grid item xs={6} className="full-height">
           <Item className="full-height" style={{display: 'flex', alignItems: 'center', gap: '10px', justifyContent: 'flex-end'}}>
-            <h2>{weather[0][0].wind.deg}</h2>
+            <h2>{weather[0][4].wind.deg}</h2>
             <ArrowForwardIcon style={{color: 'white'}}/>
           </Item>
         </Grid>
@@ -86,7 +86,7 @@ const SanFrancisco = () => {
         </Grid>
         <Grid item xs={6} className="full-height"  style={{background: '#EC4C8A'}}>
           <Item className="full-height" style={{display: 'flex', alignItems: 'center', gap: '10px', justifyContent: 'flex-end', background: '#EC4C8A'}}>
-            <h2>{weather[0][0].visibility}</h2>
+            <h2>{weather[0][4].visibility}</h2>
             <ArrowForwardIcon style={{color: 'white'}}/>
           </Item>
         </Grid>
@@ -100,7 +100,7 @@ const SanFrancisco = () => {
         </Grid>
         <Grid item xs={6} className="full-height">
           <Item className="full-height" style={{display: 'flex', alignItems: 'center', gap: '10px', justifyContent: 'flex-end'}}>
-            <h2>{weather[0][0].coord.lat}</h2>
+            <h2>{weather[0][4].coord.lat}</h2>
             <ArrowForwardIcon style={{color: 'white'}}/>
           </Item>
         </Grid>
@@ -114,7 +114,7 @@ const SanFrancisco = () => {
         </Grid>
         <Grid item xs={6} className="full-height"  style={{background: '#EC4C8A'}}>
           <Item className="full-height" style={{display: 'flex', alignItems: 'center', gap: '10px', justifyContent: 'flex-end', background: '#EC4C8A'}}>
-            <h2>{weather[0][0].coord.lon}</h2>
+            <h2>{weather[0][4].coord.lon}</h2>
             <ArrowForwardIcon style={{color: 'white'}}/>
           </Item>
         </Grid>
@@ -128,7 +128,7 @@ const SanFrancisco = () => {
         </Grid>
         <Grid item xs={6} className="full-height">
           <Item className="full-height" style={{display: 'flex', alignItems: 'center', gap: '10px', justifyContent: 'flex-end'}}>
-            <h2>{weather[0][0].main.temp_max}</h2>
+            <h2>{weather[0][4].main.temp_max}</h2>
             <ArrowForwardIcon style={{color: 'white'}}/>
           </Item>
         </Grid>
@@ -142,7 +142,7 @@ const SanFrancisco = () => {
         </Grid>
         <Grid item xs={6} className="full-height">
           <Item className="full-height" style={{display: 'flex', alignItems: 'center', gap: '10px', justifyContent: 'flex-end', background: '#EC4C8A'}}>
-            <h2>{weather[0][0].main.temp_min}</h2>
+            <h2>{weather[0][4].main.temp_min}</h2>
             <ArrowForwardIcon style={{color: 'white'}}/>
           </Item>
         </Grid>
@@ -156,7 +156,7 @@ const SanFrancisco = () => {
         </Grid>
         <Grid item xs={6} className="full-height">
           <Item className="full-height" style={{display: 'flex', alignItems: 'center', gap: '10px', justifyContent: 'flex-end'}}>
-            <h2>{weather[0][0].main.humidity}</h2>
+            <h2>{weather[0][4].main.humidity}</h2>
             <ArrowForwardIcon style={{color: 'white'}}/>
           </Item>
         </Grid>

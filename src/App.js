@@ -11,6 +11,11 @@ import Weather from '../src/features/wheather/Weather'
 import Navbar from './components/Navbar';
 import Home from './components/Home'
 import SanFrancisco from './components/SanFrancisco'
+import Nairobi from './components/Nairobi'
+import Mitte from './components/Mitte'
+import Sydney from './components/Sydney'
+import Shanghai from './components/Shanghai'
+import LongIsland from './components/LongIsland'
 
 import './App.css';
 
@@ -30,8 +35,13 @@ function App() {
   return (
     <BrowserRouter> 
       <Routes>
-        <Route path="/" element={<Home weather={weather}/>} />
-        <Route path="sanfrancisco" element={<SanFrancisco weather={weather}/>} />
+        <Route path="/" element={<Home />} />
+        <Route path="sanfrancisco" element={<SanFrancisco />} />
+        <Route path="nairobi" element={<Nairobi />} />
+        <Route path="mitte" element={<Mitte />} />
+        <Route path="sydney" element={<Sydney />} />
+        <Route path="shanghai" element={<Shanghai />} />
+        <Route path="longisland" element={<LongIsland />} />
       </Routes>
     </BrowserRouter>
   );
