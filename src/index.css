@@ -1,22 +1,29 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #EC4C8A;
+  background: #ec4c8a;
 }
 
 .nav-list {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-left: 0;
   list-style-type: none;
   padding-left: 20px;
   padding-right: 20px;
-  
   margin: 0;
 }
 
@@ -41,7 +48,6 @@ body {
 
 #headline {
   padding-top: 20px;
-  
 }
 
 .continent__card {
@@ -79,4 +85,3 @@ hr {
   border-right: 1px solid black;
   padding-right: 10px;
 }
-
