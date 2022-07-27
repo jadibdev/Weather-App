@@ -1,21 +1,16 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { getWeather } from './features/wheather/weatherSlice';
+import React, { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
 /* import { useSelector, useDispatch } from 'react-redux';
 import { getWeather } from './features/wheather/weatherSlice'; */
-import { BrowserRouter } from "react-router-dom";
-import { Routes, Route, Link } from "react-router-dom";
-import CityDetail from '../src/components/CityDetail'
-import Weather from '../src/features/wheather/Weather'
-import Navbar from './components/Navbar';
-import Home from './components/Home'
-import SanFrancisco from './components/SanFrancisco'
-import Nairobi from './components/Nairobi'
-import Mitte from './components/Mitte'
-import Sydney from './components/Sydney'
-import Shanghai from './components/Shanghai'
-import LongIsland from './components/LongIsland'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { getWeather } from './features/wheather/weatherSlice';
+import Home from './components/Home';
+import SanFrancisco from './components/SanFrancisco';
+import Nairobi from './components/Nairobi';
+import Mitte from './components/Mitte';
+import Sydney from './components/Sydney';
+import Shanghai from './components/Shanghai';
+import LongIsland from './components/LongIsland';
 
 import './App.css';
 
@@ -23,17 +18,16 @@ let apiCalled = false;
 
 function App() {
   const dispatch = useDispatch();
-  const { weather } = useSelector((state) => state.weather);
 
-   useEffect(() => {
+  useEffect(() => {
     if (apiCalled === false) {
       apiCalled = true;
       dispatch(getWeather());
     }
   }, [dispatch]);
- 
+
   return (
-    <BrowserRouter> 
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="sanfrancisco" element={<SanFrancisco />} />
