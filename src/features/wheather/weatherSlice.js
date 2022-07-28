@@ -3,7 +3,6 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 
 const initialState = {
   weather: [],
-  elevation: '',
   status: null,
 };
 
@@ -64,5 +63,4 @@ const weatherSlice = createSlice({
   },
 });
 
-// export const { joinMission, cancelMission } = weatherSlice.actions;
 export default weatherSlice.reducer;
