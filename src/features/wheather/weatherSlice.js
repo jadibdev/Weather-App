@@ -28,22 +28,11 @@ export const getWeather = createAsyncThunk(
   },
 );
 
-// expect(window.location.href).toBe("") or window.location.pathname
-
 const weatherSlice = createSlice({
   name: 'weather',
   initialState,
   reducers: {
-    /* joinMission(state, action) {
-      const localState = state;
-      state.joinedMissions.push(action.payload);
-      localState.reserved = true;
-    },
-    cancelMission(state, action) {
-      const localState = state;
-      localState.joinedMissions = state.joinedMissions.filter((id) => id !== action.payload);
-      localState.reserved = false;
-    }, */
+
   },
   extraReducers: {
     [getWeather.pending]: (state) => {

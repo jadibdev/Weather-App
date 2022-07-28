@@ -20,7 +20,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 const Nairobi = () => {
-  // const { weather } = props;
   const { weather } = useSelector((state) => state.weather);
   return (
     <div className="nav-container">

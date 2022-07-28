@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-/* import { useSelector, useDispatch } from 'react-redux';
-import { getWeather } from './features/wheather/weatherSlice'; */
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { getWeather } from './features/wheather/weatherSlice';
 import Home from './components/Home';

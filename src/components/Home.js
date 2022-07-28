@@ -12,6 +12,7 @@ import asiaMap from '../assets/asia.png';
 import australiaMap from '../assets/australia.png';
 import americaMap from '../assets/united-states-of-america.png';
 import Navbar from './Navbar';
+import SearchInput from './SearchInput';
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: '#EF70A0',
@@ -27,6 +28,7 @@ export default function RowAndColumnSpacing() {
   return (
     <>
       <Navbar />
+      <SearchInput />
       <Box sx={{ width: '100%' }} className="global-container">
         <hr style={{ background: 'white' }} />
         {weather.map((city) => (

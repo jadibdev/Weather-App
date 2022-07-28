@@ -38,6 +38,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
+- [Nelson Sakwa on Behance](https://www.behance.net/sakwadesignstudio)
 - Microverse Community
 
 ## 📝 License
