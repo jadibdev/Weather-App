@@ -22,7 +22,6 @@ const Item = styled(Paper)(({ theme }) => ({
 const Mitte = () => {
   // const { weather } = props;
   const { weather } = useSelector((state) => state.weather);
-  console.log('from Nairobi', weather);
   return (
     <div className="nav-container">
       <ul className="nav-list" style={{ padding: '20px' }}>
