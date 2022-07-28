@@ -4,7 +4,7 @@ This project is a mobile app that enables users to look up weather conditions ar
 
 ### Live link
 
-[Weather Stats](https://jadibdev.github.io/Meals/dist/index.html)
+[Weather Stats](https://dapper-hummingbird-24236c.netlify.app/)
 
 ## Tools
 
